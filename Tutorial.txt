@@ -1,0 +1,36 @@
+Tutorial 
+Git for dummies
+
+a) Wrzucanie na repozytorium:
+	1. git init - inicjalizuje repozytorium w aktualnym katalogu
+	2. git add <file> - dodaje pliki do repozytorium, np git add . - dodanie wszystkich plików z aktualnego katalogu
+	3. git remote add origin <url> - podpięcie do repozytorium zdalnego 
+		w naszym wypadku 
+			git remote add origin https://github.com/IwanBugajski/forams.git
+	4. git commit - wiadomo
+	5. git branch - wyświetla istniejące gałęzie
+	6. git branch <name> - utworzenie nowej gałęzi
+	7. git checkout <name> - przełączenie się na daną gałąź
+	8. git branch --set-upstream-to=master <name> - ustalenie rodzica dla gałęzi - w tym wypadku rodzic to "master"
+	9. git push -u origin <remote> - wrzucenie na zdalne repozytorium, na zdalną gałąź <remote>
+	
+	
+	
+b) Gałęzie
+	Zabrania się pushowanie na gałąź master
+	Wszystkie gałęzie muszą miec nazwę w postaci <category>/<name>
+	Gdzie kategoria to:
+		feature - nowa funkcjonalność
+		fix - naprawa błędu
+		algorithm - sam algorytm
+		integration - gałąź integracji
+	Nazwa powinna skłądać się z 2 - 4 angielskich słów oddzielonych '_' dobrze opisujących cel istnienia tej gałęzi
+	
+	
+
+c) Dodatkowe komendy
+	1. git status - wiadomo
+	2. git rm --cached <file> - usunięcie pliku dodanego za pomocą git add
+	3. git pull - synchronizacja z aktualną gałęzią, konieczne jeśli repozytorium lokalne jest starsze od zdalnego
+	4. git clone - kopiowanie repozytorium
+	
